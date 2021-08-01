@@ -38,9 +38,7 @@ class Ui_MainWindow(QMainWindow):
         self.main_tab_widget.setMovable(False)
         self.main_tab_widget.setObjectName("main_tab_widget")
 
-        # self.con =  mdb.connect('remotemysql.com','4VKTDZ2lGH','2ulQoNpik0','4VKTDZ2lGH')
-        # self.cur =  self.con.cursor()
-
+        
         self.local_con = mdb.connect('localhost','root','PrinceGoyal49','shopledger')
         self.local_con_cur = self.local_con.cursor()
 
